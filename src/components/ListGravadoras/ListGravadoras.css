@@ -1,0 +1,131 @@
+.Gravadoras {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+
+  width: 90vw;
+  height: 75vh;
+  box-sizing: border-box;
+
+  padding: 2%;
+
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.gravadorasHeaderTitle {
+  font-size: 35px;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background: rgb(78, 68, 102);
+  background: linear-gradient(
+    90deg,
+    rgba(78, 68, 102, 1) 5%,
+    rgba(82, 109, 133, 1) 53%,
+    rgba(201, 232, 253, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.listGravadoras {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  box-sizing: border-box;
+}
+
+.eachGravadora {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 75%;
+  height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.gravadoraImg {
+  background-image: url('https://upload.wikimedia.org/wikipedia/pt/2/2b/Sony_Music_Entertainment.png');
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gravadoraInfo {
+  margin-left: 10px;
+}
+
+.gravadoraApiText {
+  color: #303030;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: rgba(6, 24, 44, 0.2) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.45) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.01) 0px 1px 0px inset;
+  background-color: white;
+}
+
+.gravadoraAlbuns {
+  text-align: center;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gravadoraAlbunsApiText {
+  color: #303030;
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 5px;
+  width: 400px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: rgba(6, 24, 44, 0.2) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.45) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.01) 0px 1px 0px inset;
+  background-color: white;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.controlButtons {
+  position: relative;
+  top: -50px;
+  left: 35px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
