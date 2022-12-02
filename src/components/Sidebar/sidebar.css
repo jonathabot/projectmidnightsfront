@@ -4,22 +4,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #fefae0;
 }
 
 .sidebar section {
-  font-size: 1.9vw;
+  font-size: 2.3vw;
 }
 
 .sidebar a {
   white-space: nowrap;
   overflow: visible;
   margin-bottom: 5%;
-  font-size: 1vw;
+  font-size: 1.4vw;
 }
 
 .sidebarSides {
   margin-left: 1.5vw;
-  margin-top: 35vh;
+  margin-top: 26vh;
   font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -47,10 +48,9 @@
 
 hr {
   border: 0;
-  width: 5vw;
+  width: 7vw;
   height: 0.2vh;
   position: relative;
-  right: 4.2vh;
   top: -0.8vw;
   background-image: linear-gradient(
     to right,

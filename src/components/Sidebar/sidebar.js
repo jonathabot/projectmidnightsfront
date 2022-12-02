@@ -30,14 +30,6 @@ function SideBar() {
             type="button"
             id="viewGravadoras"
             href=""
-            onClick={handleClickHome}
-          >
-            Home
-          </a>
-          <a
-            type="button"
-            id="viewGravadoras"
-            href=""
             onClick={handleClickGravadoras}
           >
             Gravadoras
@@ -63,11 +55,13 @@ function SideBar() {
         <div class="sideB">
           <section className="sidebarSideB">Side B</section>
           <hr></hr>
-          <a type="button" id="" href="">
-            Login
-          </a>
-          <a type="button" id="" href="">
-            Cadastrar
+          <a
+            type="button"
+            id="viewGravadoras"
+            href=""
+            onClick={handleClickHome}
+          >
+            Home
           </a>
         </div>
       </div>
