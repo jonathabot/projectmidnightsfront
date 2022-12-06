@@ -24,6 +24,7 @@ function ListGravadoras() {
                 src="https://upload.wikimedia.org/wikipedia/pt/2/2b/Sony_Music_Entertainment.png"
                 width="75"
                 height="75"
+                alt=""
               />
             </div>
             <div className="gravadoraInfo">
@@ -35,25 +36,22 @@ function ListGravadoras() {
               </div>
               <div className="gravadoraId">
                 <p>
-                  ID: <span className="gravadoraApiText">{gravadora.id}</span>
-                </p>
-              </div>
-              <div className="gravadoraArtistas">
-                <p>
-                  Artistas:{' '}
-                  <span className="gravadoraApiText">Taylor Swift, Drake</span>
+                  ID:{' '}
+                  <span className="gravadoraApiText">
+                    {gravadora.idGravadora}
+                  </span>
                 </p>
               </div>
             </div>
-            <div className="gravadoraAlbuns">
+            <div className="gravadoraArtistas">
               <p>Albuns Lançados:</p>
-              <div id="gravadoraAlbunsApiText">
-                <span>Folkore, Taylor Swift, 2020</span>
-                <span>Evermore, Taylor Swift, 2020</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
+              <div id="gravadoraArtistasApiText">
+                <span>Taylor Swift, 2020</span>
+                <span>IVE, 2020</span>
+                <span>Ellie Goulding, 2020</span>
+                <span>Grimes, 2021</span>
+                <span>Declan McKenna, 2021</span>
+                <span>Gracie Abrams, 2020</span>
               </div>
             </div>
             <div className="controlButtons">

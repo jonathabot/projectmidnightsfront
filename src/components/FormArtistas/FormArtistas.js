@@ -3,14 +3,17 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function FormArtistas() {
+  const [idArtista, setIdArtista] = useState('');
   const [nomeArtista, setNomeArtista] = useState('');
 
   const { register, handleSubmit } = useForm();
 
   const onSubmit = e => {
+    setIdArtista(e.id);
     setNomeArtista(e.nome);
     axios
       .post('http://localhost:8080/artista/add', {
+        idArtista: idArtista,
         nome: nomeArtista
       })
       .then(() => {
@@ -26,6 +29,15 @@ function FormArtistas() {
         onSubmit={handleSubmit(onSubmit)}
       >
         <section className="formArtistasTitle">Adicionar Artista</section>
+        <div>
+          <label>Id da Gravadora: </label>
+          <input
+            type="number"
+            name="gravadoraId"
+            placeholder="Digite o id da gravadora"
+            {...register('id')}
+          />
+        </div>
         <div>
           <label>Nome do Artista: </label>
           <input

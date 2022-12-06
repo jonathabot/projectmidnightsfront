@@ -3,14 +3,17 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function FormGravadoras() {
+  const [idGravadora, setIdGravadora] = useState('');
   const [nomeGravadora, setNomeGravadora] = useState('');
 
   const { register, handleSubmit } = useForm();
 
   const onSubmit = e => {
+    setIdGravadora(e.id);
     setNomeGravadora(e.nome);
     axios
       .post('http://localhost:8080/gravadora/add', {
+        idGravadora: idGravadora,
         nome: nomeGravadora
       })
       .then(() => {
@@ -26,6 +29,15 @@ function FormGravadoras() {
         onSubmit={handleSubmit(onSubmit)}
       >
         <section className="formGravadorasTitle">Adicionar Gravadora</section>
+        <div>
+          <label>Id da Gravadora: </label>
+          <input
+            type="number"
+            name="gravadoraId"
+            placeholder="Digite o id da gravadora"
+            {...register('id')}
+          />
+        </div>
         <div>
           <label>Nome da Gravadora: </label>
           <input

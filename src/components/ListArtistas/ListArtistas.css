@@ -1,4 +1,4 @@
-.Gravadoras {
+.artistas {
   background: radial-gradient(
     circle at 18.7% 37.8%,
     rgb(250, 250, 250) 0%,
@@ -15,7 +15,7 @@
   overflow-x: hidden;
 }
 
-.gravadorasHeaderTitle {
+.artistasHeaderTitle {
   font-size: 35px;
   font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
   font-weight: normal;
@@ -32,17 +32,16 @@
   text-align: center;
 }
 
-.listGravadoras {
+.listArtistas {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
   box-sizing: border-box;
 }
 
-.eachGravadora {
+.eachArtista {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  width: 75%;
   height: 200px;
   margin-bottom: 10px;
   display: flex;
@@ -53,7 +52,7 @@
   justify-content: space-around;
 }
 
-.gravadoraImg {
+.artistaImg {
   background-image: url('https://upload.wikimedia.org/wikipedia/pt/2/2b/Sony_Music_Entertainment.png');
   width: 75px;
   height: 75px;
@@ -62,12 +61,11 @@
   justify-content: center;
 }
 
-.gravadoraInfo {
-  margin-left: 10px;
-  width: 200px;
+.artistaInfo {
+  width: 300px;
 }
 
-.gravadoraApiText {
+.artistaApiText {
   color: #303030;
   margin-left: 5px;
   font-size: 12px;
@@ -79,20 +77,20 @@
   background-color: white;
 }
 
-.gravadoraArtistas {
+.artistaAlbuns {
   text-align: center;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#gravadoraArtistasApiText {
-  color: #303030;
+#artistaAlbunsApiText {
   margin-left: 5px;
   font-size: 12px;
   padding: 5px;
-  height: 100px;
   width: 500px;
+  height: 100px;
   border-radius: 15px;
   box-shadow: rgba(6, 24, 44, 0.2) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.45) 0px 4px 6px -1px,
