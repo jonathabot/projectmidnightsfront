@@ -7,6 +7,7 @@ export function Home() {
       <Header />
       <div className="sideAndNext">
         <SideBar />
+        
       </div>
     </div>
   );

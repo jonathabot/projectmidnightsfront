@@ -1,13 +1,14 @@
 import Header from '../../components/Header/Header';
 import SideBar from '../../components/Sidebar/sidebar';
+import ListAlbums from '../../components/ListAlbums/ListAlbums';
 
-export function Albuns() {
+export function Albums() {
   return (
     <div>
       <Header />
       <div className="sideAndNext">
         <SideBar />
-        <h1>ListAlbuns</h1>
+        <ListAlbums />
       </div>
     </div>
   );

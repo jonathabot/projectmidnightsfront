@@ -16,8 +16,8 @@ function SideBar() {
     navigate('/artistas');
   };
 
-  const handleClickAlbuns = () => {
-    navigate('/albuns');
+  const handleClickAlbums = () => {
+    navigate('/albums');
   };
 
   return (
@@ -44,11 +44,11 @@ function SideBar() {
           </a>
           <a
             type="button"
-            id="viewAlbuns"
-            href="/albuns"
-            onClick={handleClickAlbuns}
+            id="viewAlbums"
+            href="/albums"
+            onClick={handleClickAlbums}
           >
-            Albuns
+            Albums
           </a>
         </div>
 
