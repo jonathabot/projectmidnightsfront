@@ -59,7 +59,7 @@ function FormGravadoras() {
         onClick={handleClickVoltarGravadoras}
         href="/gravadoras"
       >
-        Voltar para Página Inicial{' '}
+        Voltar para Página Inicial
       </a>
     </div>
   );

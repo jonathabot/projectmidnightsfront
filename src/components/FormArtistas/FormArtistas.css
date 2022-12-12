@@ -1,0 +1,110 @@
+.FormArtistas {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+
+  width: 90vw;
+  height: 75vh;
+  box-sizing: border-box;
+
+  padding: 2%;
+
+  overflow: scroll;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  color: #303030;
+}
+
+.formArtistasTitle {
+  font-size: 35px;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 16px;
+}
+
+.fieldId {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.fieldNome {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#fieldInput {
+  padding: 4px 8px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.buttonSubmit {
+  margin-top: 30px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #303030;
+  cursor: pointer;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  width: 150px;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonSubmit:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .buttonSubmit {
+    padding: 0 2.6rem;
+  }
+}

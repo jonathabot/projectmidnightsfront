@@ -1,4 +1,4 @@
-# Project Midnights (Front-end)
+# **Project Midnights** (Front-end)
 
 Este é o repositório Front-end para um sistema de controle de cadastro de Gravadoras e seus artistas e albuns. Foi desenvolvido como o projeto final durante a disciplina PPWI4 (Programação para Web) para minha faculdade.
 

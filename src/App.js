@@ -6,6 +6,8 @@ import { Gravadoras } from './pages/Gravadoras/gravadoras';
 import { Artistas } from './pages/Artistas/artistas';
 import { Albums } from './pages/Albums/albums';
 import { CadastroGravadoras } from './pages/CadastroGravadoras/CadastroGravadoras';
+import { CadastroArtistas } from './pages/CadastroArtistas/CadastroArtistas';
+import { CadastroAlbums } from './pages/CadastroAlbums/CadastroAlbums';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           path="/cadastrogravadoras"
           element={<CadastroGravadoras />}
         ></Route>
+        <Route path="/cadastroartistas" element={<CadastroArtistas />}></Route>
+        <Route path="/cadastroalbums" element={<CadastroAlbums />}></Route>
       </Routes>
     </Router>
   );

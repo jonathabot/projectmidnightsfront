@@ -3,8 +3,15 @@ import { useState, useEffect } from 'react';
 import './ListArtistas.css';
 import { FaEdit } from 'react-icons/fa';
 import { AiFillDelete } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 function ListArtistas() {
+  const navigate = useNavigate();
+
+  const handleClickCadastroArtistas = () => {
+    navigate('/cadastroartistas');
+  };
+
   const [artistas, setArtistas] = useState([]);
 
   useEffect(() => {
@@ -15,7 +22,12 @@ function ListArtistas() {
 
   return (
     <div className="artistas">
-      <p className="artistasHeaderTitle"> Artistas Cadastrados </p>
+      <div className="artistasHeaderButton">
+        <section className="artistasHeaderTitle">Artistas Cadastrados</section>
+        <button onClick={handleClickCadastroArtistas}>
+          Cadastrar Artistas
+        </button>
+      </div>
       <div className="listArtistas">
         {artistas.map(artista => (
           <div className="eachArtista">

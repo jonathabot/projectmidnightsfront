@@ -1,14 +1,14 @@
 import Header from '../../components/Header/Header';
 import SideBar from '../../components/Sidebar/sidebar';
-import FormGravadoras from '../../components/FormGravadoras/FormGravadoras';
+import FormAlbums from '../../components/FormAlbums/FormAlbums';
 
-export function Cadastro() {
+export function CadastroAlbums() {
   return (
     <div>
       <Header />
       <div className="sideAndNext">
         <SideBar />
-        <FormGravadoras />
+        <FormAlbums />
       </div>
     </div>
   );
