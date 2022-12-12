@@ -1,11 +1,16 @@
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import axios from 'axios';
 import './FormGravadoras.css';
+import { useNavigate } from 'react-router-dom';
 
 function FormGravadoras() {
+  const navigate = useNavigate();
 
   const { register, handleSubmit } = useForm();
+
+  const handleClickVoltarGravadoras = () => {
+    navigate('/gravadoras');
+  };
 
   const onSubmit = e => {
     axios
@@ -49,7 +54,13 @@ function FormGravadoras() {
         <input type="submit" value="Enviar" className="buttonSubmit"></input>
       </form>
 
-      <p>Voltar para Página Inicial </p>
+      <a
+        className="button"
+        onClick={handleClickVoltarGravadoras}
+        href="/gravadoras"
+      >
+        Voltar para Página Inicial{' '}
+      </a>
     </div>
   );
 }

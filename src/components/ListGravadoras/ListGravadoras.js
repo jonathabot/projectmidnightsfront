@@ -3,8 +3,15 @@ import { useState, useEffect } from 'react';
 import './ListGravadoras.css';
 import { FaEdit } from 'react-icons/fa';
 import { AiFillDelete } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 function ListGravadoras() {
+  const navigate = useNavigate();
+
+  const handleClickCadastroGravadoras = () => {
+    navigate('/cadastrogravadoras');
+  };
+
   const [gravadoras, setGravadoras] = useState([]);
 
   useEffect(() => {
@@ -15,7 +22,14 @@ function ListGravadoras() {
 
   return (
     <div className="Gravadoras">
-      <p className="gravadorasHeaderTitle"> Gravadoras Cadastradas </p>
+      <div className="gravadoraHeaderButton">
+        <section className="gravadorasHeaderTitle">
+          Gravadoras Cadastradas
+        </section>
+        <button onClick={handleClickCadastroGravadoras}>
+          Cadastrar Gravadora
+        </button>
+      </div>
       <div className="listGravadoras">
         {gravadoras.map(gravadora => (
           <div className="eachGravadora">
@@ -44,7 +58,7 @@ function ListGravadoras() {
               </div>
             </div>
             <div className="gravadoraArtistas">
-              <p>Albuns Lançados:</p>
+              <p>Artistas da Gravadora:</p>
               <div id="gravadoraArtistasApiText">
                 <span>Taylor Swift, 2020</span>
                 <span>IVE, 2020</span>
