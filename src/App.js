@@ -5,7 +5,7 @@ import { Home } from './pages/Home/home';
 import { Gravadoras } from './pages/Gravadoras/gravadoras';
 import { Artistas } from './pages/Artistas/artistas';
 import { Albums } from './pages/Albums/albums';
-import { Cadastro } from './pages/Cadastro/cadastro';
+import { CadastroGravadoras } from './pages/CadastroGravadoras/CadastroGravadoras';
 
 function App() {
   return (
@@ -15,7 +15,10 @@ function App() {
         <Route path="/gravadoras" element={<Gravadoras />}></Route>
         <Route path="/artistas" element={<Artistas />}></Route>
         <Route path="/albums" element={<Albums />}></Route>
-        <Route path="/cadastro" element={<Cadastro />}></Route>
+        <Route
+          path="/cadastrogravadoras"
+          element={<CadastroGravadoras />}
+        ></Route>
       </Routes>
     </Router>
   );
