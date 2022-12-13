@@ -6,10 +6,6 @@ import { useNavigate } from 'react-router-dom';
 function FormAlbums() {
   const navigate = useNavigate();
 
-  const handleClickVoltarAlbums = () => {
-    navigate('/albums');
-  };
-
   const { register, handleSubmit } = useForm();
 
   const onSubmit = e => {
@@ -22,6 +18,7 @@ function FormAlbums() {
       })
       .then(() => {
         console.log('New album added');
+        navigate('/albums');
       });
   };
 
@@ -71,10 +68,6 @@ function FormAlbums() {
         </div>
         <input type="submit" value="Enviar" className="buttonSubmit"></input>
       </form>
-
-      <a className="button" onClick={handleClickVoltarAlbums} href="/albums">
-        Voltar para Página Inicial
-      </a>
     </div>
   );
 }

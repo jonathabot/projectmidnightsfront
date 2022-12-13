@@ -6,10 +6,6 @@ import { useNavigate } from 'react-router-dom';
 function FormArtistas() {
   const navigate = useNavigate();
 
-  const handleClickVoltarArtistas = () => {
-    navigate('/artistas');
-  };
-
   const { register, handleSubmit } = useForm();
 
   const onSubmit = e => {
@@ -22,6 +18,7 @@ function FormArtistas() {
       })
       .then(() => {
         console.log('New artista added');
+        navigate('/artistas');
       });
   };
 
@@ -75,14 +72,6 @@ function FormArtistas() {
         </div>
         <input type="submit" value="Enviar" className="buttonSubmit"></input>
       </form>
-
-      <a
-        className="button"
-        onClick={handleClickVoltarArtistas}
-        href="/artistas"
-      >
-        Voltar para Página Inicial
-      </a>
     </div>
   );
 }

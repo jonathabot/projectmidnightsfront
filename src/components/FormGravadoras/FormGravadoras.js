@@ -8,10 +8,6 @@ function FormGravadoras() {
 
   const { register, handleSubmit } = useForm();
 
-  const handleClickVoltarGravadoras = () => {
-    navigate('/gravadoras');
-  };
-
   const onSubmit = e => {
     axios
       .post('http://localhost:8080/gravadora/add', {
@@ -22,6 +18,7 @@ function FormGravadoras() {
       })
       .then(() => {
         console.log('New gravadora added');
+        navigate('/gravadoras');
       });
   };
 
@@ -75,14 +72,6 @@ function FormGravadoras() {
         </div>
         <input type="submit" value="Enviar" className="buttonSubmit"></input>
       </form>
-
-      <a
-        className="button"
-        onClick={handleClickVoltarGravadoras}
-        href="/gravadoras"
-      >
-        Voltar para Página Inicial
-      </a>
     </div>
   );
 }
