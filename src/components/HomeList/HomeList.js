@@ -27,94 +27,61 @@ function HomeList() {
 
   return (
     <div className="homeList">
-      <div className="homeListGravadoras">
-        <div className="titleHomeListGravadoras">
+      <div className="homeListPart">
+        <div className="titleHomeList">
           <p>Ultimas Gravadoras Cadastradas</p>
         </div>
-        <div className="apiHomeListGravadoras">
+        <div className="apiHomeList">
           {gravadoras.map(gravadora => (
-            <div className="homeListEachGravadora">
-              <div className="homeListGravadoraId">
-                ID:
-                <span className="homeListGravadoraApiText">
-                  {gravadora.idGravadora}
-                </span>
+            <div className="homeListEach">
+              <div className="homeListId">
+                <span>ID: </span>
+                <span className="homeListApiText">{gravadora.idGravadora}</span>
               </div>
-              <div className="homeListGravadoraNome">
-                Nome:{' '}
-                <span className="homeListGravadoraApiText">
-                  {gravadora.nome}
-                </span>
+              <div className="homeListNome">
+                <span>Nome: </span>
+                <span className="homeListApiText">{gravadora.nome}</span>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="homeListArtistas">
-        <div className="homeListArtistas">
-          <div className="titleHomeListArtistas">
-            <p>Ultimos Artistas Cadastradas</p>
-          </div>
-          <div className="apiHomeListArtistas">
-            {artistas.map(artista => (
-              <div className="eachArtista">
-                <div className="artistaImg">
-                  <img
-                    src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2022/11/a9aac53-anti-hero-taylor-swift-analise-150x150.png"
-                    width="75"
-                    height="75"
-                    alt=""
-                  />
-                </div>
-                <div className="artistaInfo">
-                  <div className="artistaNome">
-                    <p>
-                      Nome:{' '}
-                      <span className="artistaApiText">{artista.nome}</span>
-                    </p>
-                  </div>
-                  <div className="artistaId">
-                    <p>
-                      ID: <span className="artistaApiText">{artista.id}</span>
-                    </p>
-                  </div>
-                </div>
+      <div className="homeListPart">
+        <div className="titleHomeList">
+          <p>Ultimos Artistas Cadastradas</p>
+        </div>
+        <div className="apiHomeList">
+          {artistas.map(artista => (
+            <div className="homeListEach">
+              <div className="homeListId">
+                <span>ID: </span>
+                <span className="homeListApiText">{artista.id}</span>
               </div>
-            ))}
-          </div>
+              <div className="artistaNome">
+                <span>Nome: </span>
+                <span className="homeListApiText">{artista.nome}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="homeListAlbums">
-        <div className="homeListAlbums">
-          <div className="titleHomeListAlbums">
-            <p>Ultimos Albums Cadastrados</p>
-          </div>
-          <div className="apiHomeListAlbums">
-            {albums.map(album => (
-              <div className="eachAlbum">
-                <div className="albumImg">
-                  <img
-                    src="https://m.media-amazon.com/images/I/A1Q6XGXmIFL._AC_SL1500_.jpg"
-                    width="75"
-                    height="75"
-                    alt=""
-                  />
-                </div>
-                <div className="albumInfo">
-                  <div className="albumNome">
-                    <p>
-                      Nome: <span className="albumApiText">{album.nome}</span>
-                    </p>
-                  </div>
-                  <div className="albumId">
-                    <p>
-                      ID: <span className="albumApiText">{album.id}</span>
-                    </p>
-                  </div>
-                </div>
+      <div className="homeListPart">
+        <div className="titleHomeList">
+          <p>Ultimos Albums Cadastradas</p>
+        </div>
+        <div className="apiHomeList">
+          {albums.map(album => (
+            <div className="homeListEach">
+              <div className="homeListId">
+                <span>ID: </span>
+                <span className="homeListApiText">{album.id}</span>
               </div>
-            ))}
-          </div>
+              <div className="artistaNome">
+                <span>Nome: </span>
+                <span className="homeListApiText">{album.nome}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

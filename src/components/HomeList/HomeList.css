@@ -17,7 +17,7 @@
   justify-content: space-around;
 }
 
-.homeListGravadoras {
+.homeListPart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,37 +29,10 @@
   background-color: #8bc6ec;
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   border-radius: 10px;
+  color: #303030;
 }
 
-.homeListArtistas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 60%;
-  overflow: hidden;
-  overflow-x: hidden;
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  border-radius: 10px;
-}
-
-.homeListAlbums {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 60%;
-  overflow: hidden;
-  overflow-x: hidden;
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  border-radius: 10px;
-}
-
-.titleHomeListGravadoras {
+.titleHomeList {
   font-size: 20px;
   font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
   font-weight: normal;
@@ -68,7 +41,7 @@
   text-align: center;
 }
 
-.apiHomeListGravadoras {
+.apiHomeList {
   background-color: beige;
   width: 75%;
   height: 300px;
@@ -76,7 +49,7 @@
   border-radius: 10px;
 }
 
-.homeListEachGravadora {
+.homeListEach {
   background-color: white;
   height: 97px;
   display: flex;
@@ -84,4 +57,20 @@
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #303030;
+}
+
+.homeListApiText {
+  color: #303030;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: rgba(6, 24, 44, 0.2) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.45) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.01) 0px 1px 0px inset;
+  background-color: white;
+}
+
+.homeListId {
+  margin-bottom: 15px;
 }
