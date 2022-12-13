@@ -30,12 +30,7 @@ function ListAlbums() {
         {albums.map(album => (
           <div className="eachAlbum">
             <div className="albumImg">
-              <img
-                src="https://m.media-amazon.com/images/I/A1Q6XGXmIFL._AC_SL1500_.jpg"
-                width="75"
-                height="75"
-                alt=""
-              />
+              <img src={album.urlImg} width="75" height="75" alt="" />
             </div>
             <div className="albumInfo">
               <div className="albumNome">
@@ -45,19 +40,13 @@ function ListAlbums() {
               </div>
               <div className="albumId">
                 <p>
-                  ID: <span className="albumApiText">{album.id}</span>
+                  ID: <span className="albumApiText">{album.idAlbum}</span>
                 </p>
               </div>
             </div>
             <div className="albumMusicas">
               <p>Musicas do Album:</p>
-              <div id="albumMusicasApiText">
-                <span>
-                  1. The One, 2. Cardigan, 3. The Last Great American Dynasty,
-                  4. Exile, 5. My Tears Ricochet, 6. Mirrorball, 7. Seven, 8.
-                  August
-                </span>
-              </div>
+              <div id="albumMusicasApiText">{album.musicasDoAlbum}</div>
             </div>
             <div className="controlButtons">
               <FaEdit />

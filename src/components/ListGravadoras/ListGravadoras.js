@@ -34,23 +34,18 @@ function ListGravadoras() {
         {gravadoras.map(gravadora => (
           <div className="eachGravadora">
             <div className="gravadoraImg">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/pt/2/2b/Sony_Music_Entertainment.png"
-                width="75"
-                height="75"
-                alt=""
-              />
+              <img src={gravadora.urlImg} width="75" height="75" alt="" />
             </div>
             <div className="gravadoraInfo">
               <div className="gravadoraNome">
                 <p>
-                  Nome:{' '}
+                  Nome:
                   <span className="gravadoraApiText">{gravadora.nome}</span>
                 </p>
               </div>
               <div className="gravadoraId">
                 <p>
-                  ID:{' '}
+                  ID:
                   <span className="gravadoraApiText">
                     {gravadora.idGravadora}
                   </span>
@@ -60,12 +55,7 @@ function ListGravadoras() {
             <div className="gravadoraArtistas">
               <p>Artistas da Gravadora:</p>
               <div id="gravadoraArtistasApiText">
-                <span>Taylor Swift, 2020</span>
-                <span>IVE, 2020</span>
-                <span>Ellie Goulding, 2020</span>
-                <span>Grimes, 2021</span>
-                <span>Declan McKenna, 2021</span>
-                <span>Gracie Abrams, 2020</span>
+                {gravadora.artistasDaGravadora}
               </div>
             </div>
             <div className="controlButtons">

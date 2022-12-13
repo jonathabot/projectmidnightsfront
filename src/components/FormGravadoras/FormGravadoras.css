@@ -48,18 +48,12 @@ form label {
   font-size: 16px;
 }
 
-.fieldId {
+.fields {
   display: flex;
   flex-direction: column;
   width: 300px;
   justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.fieldNome {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+  margin-bottom: 20px;
 }
 
 #fieldInput {
@@ -77,16 +71,13 @@ form label {
 }
 
 .buttonSubmit {
-  margin-top: 30px;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #303030;
   cursor: pointer;
-  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
   flex-shrink: 0;
   font-size: 16px;
-  font-weight: 500;
   height: 50px;
   width: 150px;
   padding: 0 1.6rem;
@@ -96,6 +87,7 @@ form label {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-bottom: 30px;
 }
 
 .buttonSubmit:hover {

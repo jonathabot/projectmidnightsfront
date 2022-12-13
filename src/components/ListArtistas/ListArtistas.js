@@ -32,12 +32,7 @@ function ListArtistas() {
         {artistas.map(artista => (
           <div className="eachArtista">
             <div className="artistaImg">
-              <img
-                src="https://akamai.sscdn.co/tb/letras-blog/wp-content/uploads/2022/11/a9aac53-anti-hero-taylor-swift-analise-150x150.png"
-                width="75"
-                height="75"
-                alt=""
-              />
+              <img src={artista.urlImg} width="75" height="75" alt="" />
             </div>
             <div className="artistaInfo">
               <div className="artistaNome">
@@ -47,20 +42,14 @@ function ListArtistas() {
               </div>
               <div className="artistaId">
                 <p>
-                  ID: <span className="artistaApiText">{artista.id}</span>
+                  ID:{' '}
+                  <span className="artistaApiText">{artista.idArtista}</span>
                 </p>
               </div>
             </div>
             <div className="artistaAlbuns">
               <p>Albuns Lançados:</p>
-              <div id="artistaAlbunsApiText">
-                <span>Folkore, Taylor Swift, 2020</span>
-                <span>Evermore, Taylor Swift, 2020</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-                <span>Fearless (Taylor's Version), Taylor Swift, 2021</span>
-              </div>
+              <div id="artistaAlbunsApiText">{artista.albumsDoArtista}</div>
             </div>
             <div className="controlButtons">
               <FaEdit />

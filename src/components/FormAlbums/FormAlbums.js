@@ -15,8 +15,10 @@ function FormAlbums() {
   const onSubmit = e => {
     axios
       .post('http://localhost:8080/album/add', {
-        idArtista: e.id,
-        nome: e.nome
+        idAlbum: e.id,
+        nome: e.nome,
+        urlImg: e.url,
+        musicasDoAlbum: e.musicas
       })
       .then(() => {
         console.log('New album added');
@@ -27,7 +29,7 @@ function FormAlbums() {
     <div className="FormAlbums">
       <form id="form" className="formAlbums" onSubmit={handleSubmit(onSubmit)}>
         <section className="formAlbumsTitle">Adicionar Album</section>
-        <div className="fieldId">
+        <div className="fields">
           <label>Id da Album: </label>
           <input
             type="number"
@@ -37,13 +39,33 @@ function FormAlbums() {
             id="fieldInput"
           />
         </div>
-        <div className="fieldNome">
+        <div className="fields">
           <label>Nome do Album: </label>
           <input
             type="text"
             name="artistaNome"
             placeholder="Digite o nome do album"
             {...register('nome')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Url da Imagem: </label>
+          <input
+            type="text"
+            name="gravadoraUrlImg"
+            placeholder="Coloque aqui a url da imagem do artista"
+            {...register('url')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Músicas do Album: </label>
+          <input
+            type="text"
+            name="gravadoraArtistas"
+            placeholder="Coloque aqui o nome das músicas do album"
+            {...register('musicas')}
             id="fieldInput"
           />
         </div>

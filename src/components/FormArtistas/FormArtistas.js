@@ -16,7 +16,9 @@ function FormArtistas() {
     axios
       .post('http://localhost:8080/artista/add', {
         idArtista: e.id,
-        nome: e.nome
+        nome: e.nome,
+        urlImg: e.url,
+        albumsDoArtista: e.albums
       })
       .then(() => {
         console.log('New artista added');
@@ -31,8 +33,8 @@ function FormArtistas() {
         onSubmit={handleSubmit(onSubmit)}
       >
         <section className="formArtistasTitle">Adicionar Artista</section>
-        <div className="fieldId">
-          <label>Id da Gravadora: </label>
+        <div className="fields">
+          <label>Id do Artista: </label>
           <input
             type="number"
             name="gravadoraId"
@@ -41,13 +43,33 @@ function FormArtistas() {
             id="fieldInput"
           />
         </div>
-        <div className="fieldNome">
+        <div className="fields">
           <label>Nome do Artista: </label>
           <input
             type="text"
             name="artistaNome"
             placeholder="Digite o nome do artista"
             {...register('nome')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Url da Imagem: </label>
+          <input
+            type="text"
+            name="gravadoraUrlImg"
+            placeholder="Coloque aqui a url da imagem do artista"
+            {...register('url')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Albums do Artista: </label>
+          <input
+            type="text"
+            name="gravadoraArtistas"
+            placeholder="Coloque aqui o nome dos albums do artista"
+            {...register('albums')}
             id="fieldInput"
           />
         </div>

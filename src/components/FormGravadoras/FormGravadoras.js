@@ -16,7 +16,9 @@ function FormGravadoras() {
     axios
       .post('http://localhost:8080/gravadora/add', {
         idGravadora: e.id,
-        nome: e.nome
+        nome: e.nome,
+        urlImg: e.url,
+        artistasDaGravadora: e.artistas
       })
       .then(() => {
         console.log('New gravadora added');
@@ -31,7 +33,7 @@ function FormGravadoras() {
         onSubmit={handleSubmit(onSubmit)}
       >
         <section className="formGravadorasTitle">Adicionar Gravadora</section>
-        <div className="fieldId">
+        <div className="fields">
           <label>Id da Gravadora: </label>
           <input
             type="number"
@@ -41,13 +43,33 @@ function FormGravadoras() {
             id="fieldInput"
           />
         </div>
-        <div className="fieldNome">
+        <div className="fields">
           <label>Nome da Gravadora: </label>
           <input
             type="text"
             name="gravadoraName"
             placeholder="Digite o nome da gravadora"
             {...register('nome')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Url da Imagem: </label>
+          <input
+            type="text"
+            name="gravadoraUrlImg"
+            placeholder="Coloque aqui a url da imagem do artista"
+            {...register('url')}
+            id="fieldInput"
+          />
+        </div>
+        <div className="fields">
+          <label>Artistas da Gravadora: </label>
+          <input
+            type="text"
+            name="gravadoraArtistas"
+            placeholder="Coloque aqui o nome dos Artistas da gravadora"
+            {...register('artistas')}
             id="fieldInput"
           />
         </div>
