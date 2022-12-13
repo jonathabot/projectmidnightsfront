@@ -1,0 +1,87 @@
+.homeList {
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+
+  width: 90vw;
+  height: 75vh;
+  box-sizing: border-box;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.homeListGravadoras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 60%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  border-radius: 10px;
+}
+
+.homeListArtistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 60%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  border-radius: 10px;
+}
+
+.homeListAlbums {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 60%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  border-radius: 10px;
+}
+
+.titleHomeListGravadoras {
+  font-size: 20px;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #303030;
+  text-align: center;
+}
+
+.apiHomeListGravadoras {
+  background-color: beige;
+  width: 75%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.homeListEachGravadora {
+  background-color: white;
+  height: 97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #303030;
+}
